@@ -1,5 +1,8 @@
 *.manifest binary
 *.application binary
 *.deploy binary
-* text eol=crlf
-* text eol=lf
+*           text=auto     # auto
+*.txt       text
+*.vcproj    text eol=crlf # windows line-endings
+*.sh        text eol=lf   # linux line-endings
+*.jpg       -text
